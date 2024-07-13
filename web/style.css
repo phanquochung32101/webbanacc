@@ -111,13 +111,16 @@
   flex: 1;
   font-size: 30px;
 }
-.photo {
-  width: 150px;
-}
+
 .choose {
   display: flex;
-  justify-self: right;
-  text-align: center;
+  justify-content: right;
+}
+.btn {
+  display: flex;
+  padding-left: 195px;
+  padding-top: 20px;
+  width: 500px;
 }
 @media only screen and (max-width: 768px) {
   .header .nav,
