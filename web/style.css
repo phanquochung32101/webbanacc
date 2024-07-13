@@ -99,22 +99,19 @@
   flex-wrap: wrap-reverse;
 }
 
-.main_slide div:ntn-child(2) {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-}
+
 
 .main_slide div:ntn-child(1) {
   padding-top: 20px;
   flex: 1;
   font-size: 30px;
 }
-
+.photo {
+  margin-left: 800px;
+}
 .choose {
   display: flex;
-  justify-content: right;
+  justify-content: left;
 }
 .btn {
   display: flex;
