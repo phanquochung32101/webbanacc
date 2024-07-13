@@ -111,7 +111,14 @@
   flex: 1;
   font-size: 30px;
 }
-
+.photo {
+  width: 150px;
+}
+.choose {
+  display: flex;
+  justify-self: right;
+  text-align: center;
+}
 @media only screen and (max-width: 768px) {
   .header .nav,
   .header .account {
