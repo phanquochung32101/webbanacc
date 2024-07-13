@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>register</title>
-    <link rel="stylesheet" href="/register/style.css" />
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
@@ -116,7 +115,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <form action="">
+      <form action="" id = "registerForm">
         <h1>Register</h1>
         <div class="input-box">
           <div class="input-field">
@@ -159,5 +158,11 @@
         <button type="submit" class="btn">Register</button>
       </form>
     </div>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+          event.preventDefault();
+          window.location.href = "http://127.0.0.1:5500/login/login.html";
+        });
+    </script>
   </body>
 </html>
