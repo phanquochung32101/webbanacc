@@ -217,6 +217,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .accimg {
@@ -225,40 +226,49 @@
 
 .accimg img {
   max-width: 500px;
-  width: 45vw;
+  width: 450vw;
 }
 
 
-.question {
-  flex: 0.5;
+
+.container {
+  display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  align-items: flex-end;
+  padding-right: 50px;
+  padding-bottom: 20px;
+
 }
 
 .question h2 {
   font-size: 35px;
-  margin-bottom: 15px;
+  padding-right: 160px;
+  padding-bottom: 20px; 
 }
 
 .q-ans {
   display: flex;
-  justify-content: flex-start;
+  justify-content: right;
   align-items: center;
-  padding: 15px 0;
-  cursor: pointer;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
+
 .q-ans img {
-  width: 45px;
+  width: 60px;
+  float: 10px;
+  border-radius: 50%;
 }
 
 .q-ans div:first-child {
-  padding: 10px;
-  border-radius: 50%;
-  height: 65px;
+  padding: 11px;
+  border-radius: 54%;
+  height: 85px;  
   text-align: center;
   background-color: white;
-  margin-right: 20px;
+  margin-right:11px;
 }
 
 .q-ans div:nth-child(2) {
@@ -270,6 +280,8 @@
   margin-top: 10px;
   font-size: 13px;
 }
+
+
 
 @media only screen and (max-width: 768px) {
   .header .nav,
