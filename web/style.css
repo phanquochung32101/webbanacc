@@ -153,6 +153,124 @@
   color: rgb(253, 77, 8);
 }
 
+.acc-items {
+  margin: 70px 0;
+  padding: 20px 0;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 250px;
+  padding: 30px;
+  text-align: center;
+}
+
+.item div {
+  height: 160px;
+}
+
+.item img {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.item p {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.white_btn {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 160px;
+  font-weight: bold;
+  color: rgb(253, 77, 8);
+  line-height: 50px;
+  border: 1px solid rgb(253, 77, 8);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px rgb(250, 120, 69);
+  transition: all 0.2s;
+}
+
+.white_btn:hover {
+  color: aliceblue;
+  background-color: rgb(253, 77, 8);
+  box-shadow: 0 10px 15px rgb(250, 120, 69);
+}
+
+.item .red_btn,
+.item .white_btn {
+  width: 120px;
+  line-height: 35px;
+}
+
+.main_slide2 {
+  margin: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.accimg {
+  flex: 0.5;
+}
+
+.accimg img {
+  max-width: 500px;
+  width: 45vw;
+}
+
+
+.question {
+  flex: 0.5;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.question h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.q-ans {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.q-ans img {
+  width: 45px;
+}
+
+.q-ans div:first-child {
+  padding: 10px;
+  border-radius: 50%;
+  height: 65px;
+  text-align: center;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.q-ans div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.q-ans div:nth-child(2) p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
 @media only screen and (max-width: 768px) {
   .header .nav,
   .header .account {
@@ -211,6 +329,29 @@
   }
   .headerbar .account ul {
     justify-content: space-between;
+  }
+
+  .accimg {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .accimg img {
+    width: 70dvw;
+  }
+
+  .question {
+    flex: 1;
+    margin-top: 30px;
+  }
+
+  .question h2 {
+    font-size: 25px;
+  }
+
+  .q-ans div:nth-child(2) p {
+    font-size: 11px;
   }
 }
 
