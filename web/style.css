@@ -359,6 +359,7 @@
 .main_slide4 .acc-game {
   flex: 0.5;
   margin-top: 30px;
+  position: relative;
 }
 
 .main_slide4 .acc {
@@ -373,8 +374,9 @@
 }
 
 .main_slide4 .acc-game h2 {
-  font-size: 32px;
+  font-size: 35px;
   margin-bottom: 25px;
+
 }
 
 .main_slide4 .acc-game p {
@@ -409,9 +411,9 @@
 .main_slide4 .acc-vic {
   display: flex;
   align-items: center;
-  padding: 25px 20px;
+  padding: 40px 20px;
   background-color: rgb(255, 219, 185);
-  border-radius: 0 100px 0 0;
+  border-radius: 5px 100px 0 0;
   margin-top: 40px;
   width: 100%;
 }
@@ -420,25 +422,22 @@
   display: flex;
   align-items: center;
   margin-right: 20px;
-  flex: 0.5;
-  height: 27px;
-  overflow: hidden;
+  flex: 1;
+  height: 22px;
 }
 
 .main_slide4 .acc-vic .div i,
-.main_slide4 .acc-vic div h4 {
-  font-size: 27px;
-  margin-right: 8px;
-}
-
-.main_slide4 .acc-vic div h4 {
+.main_slide4 .acc-vic div h5 {
+  font-size: 20px;
   color: red;
 }
 
+
 .main_slide4 .acc-vic div p {
-  font-size: 11px;
-  padding-top: 8px;
-  line-height: 13px;
+  font-size: 12px;
+  line-height: 14px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .letter {
@@ -525,7 +524,17 @@
   width: 50px;
   margin-bottom: 15px;
 }
-
+.icon {
+  padding-left: 10px;
+}
+.acc-game .info {
+  padding-bottom: 20px;
+}
+.acc-game .titlefeedback {
+  position: absolute;
+  bottom: 430px;
+  left: 100px;
+}
 @media only screen and (max-width: 768px) {
   .header .nav,
   .header .account {
