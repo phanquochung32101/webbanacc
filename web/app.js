@@ -1,33 +1,54 @@
-const searchicon1 = document.querySelector("#searchicon1");
-const srchicon1 = document.querySelector("#srchicon1");
-const search1 = document.querySelector("#searchinput1");
-
-searchicon1.addEventListener("click", function () {
-  search1.style.display = "flex";
-  searchicon1.style.display = "none";
+// Đảm bảo menu ẩn khi trang được tải lại
+window.addEventListener('load', function() {
+  var authMenu = document.getElementById("auth-menu");
+  authMenu.style.display = "none";
 });
 
-const searchicon2 = document.querySelector("#searchicon2");
-const srchicon2 = document.querySelector("#srchicon2");
-const search2 = document.querySelector("#searchinput2");
-
-searchicon2.addEventListener("click", function () {
-  search2.style.display = "flex";
-  searchicon2.style.display = "none";
+document.getElementById("user-lap").addEventListener("click", function() {
+  var authMenu = document.getElementById("auth-menu");
+  if (authMenu.style.display === "none" || authMenu.style.display === "") {
+      authMenu.style.display = "flex";
+  } else {
+      authMenu.style.display = "none";
+  }
 });
 
-const bar = document.querySelector(".fa-bars");
-const cross = document.querySelector("#hdcross");
-const headerbar = document.querySelector(".headerbar");
+// Tùy chọn: Ẩn menu khi nhấp ra ngoài khu vực menu
+document.addEventListener("click", function(event) {
+  var userIcon = document.getElementById("user-lap");
+  var authMenu = document.getElementById("auth-menu");
 
-bar.addEventListener("click", function () {
-  setTimeout(() => {
-    cross.style.display = "block";
-  },200);
-  headerbar.style.right = "0%";
+  if (!userIcon.contains(event.target) && !authMenu.contains(event.target)) {
+      authMenu.style.display = "none";
+  }
 });
 
-cross.addEventListener("click", function () {
-  cross.style.display = "none";
-  headerbar.style.right = "-100%";
+
+// Lấy modal
+var modal = document.getElementById("modalTrungBay");
+
+// Lấy nút đóng modal
+var span = document.getElementsByClassName("close")[0];
+
+// Lấy tất cả các nút có class "acctrungbay"
+var buttons = document.querySelectorAll(".acctrungbay");
+
+// Duyệt qua từng nút và gán sự kiện click cho chúng
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Mở modal khi nhấn vào nút
+        modal.style.display = "block";
+    });
 });
+
+// Đóng modal khi nhấn vào nút đóng
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Đóng modal khi nhấn ra ngoài modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

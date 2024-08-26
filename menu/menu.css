@@ -1,0 +1,371 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 7vw;
+  background-color: rgb(252, 176, 36);
+  border-bottom: 2px solid whitesmoke;
+  box-shadow: 0 2px 20px white;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li:hover {
+  color: rgb(253, 57, 8);
+}
+
+.nav ul li {
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.account {
+  flex: 0.1;
+}
+
+.account ul {
+  display: flex;
+  justify-content: end;
+}
+
+.account ul li {
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+/* Logo and Icons */
+.logo img {
+  width: 150px;
+}
+
+.bar {
+  display: none;
+}
+
+#auth-menu {
+  position: absolute;
+  padding: 10px;
+  list-style-type: none;
+  top: 50px;
+  display: flex;
+  flex-direction: column; /* Sắp xếp các mục theo cột */
+  box-shadow: 0 0 5px white;
+  background-color: #fff;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+#auth-menu li {
+  padding: 10px 15px;
+  box-shadow: 0 0 2px gray;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#auth-menu li:hover {
+  background-color: #e0e0e0;
+}
+
+#login, #register {
+  display: inline-block; 
+  margin-bottom: 10px;
+}
+
+#auth-menu .horizontal {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: cornsilk;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: cornsilk;
+  border-radius: 8px;
+}
+
+.search-box {
+  flex: 1;
+  padding: 20px;
+  padding-top: 30px;
+  box-shadow: 0 0 5px gray;
+  background-color: white;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px; /* Tạo không gian giữa input và checkbox */
+}
+#results {
+  margin-top: 20px;
+}
+
+#results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#results li:last-child {
+  border-bottom: none;
+}
+
+.sections-container {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 30px;
+}
+
+section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 2px gray;
+}
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  flex: 1;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.price {
+  text-align: right;
+}
+
+.price button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.price button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+/* Modal Styles */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background for better contrast */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+  width: 60%; /* Moderate width for better readability */
+  max-width: 800px; /* Limit the maximum width */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  position: relative; /* For close button positioning */
+  animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+}
+
+.modal-content .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex; /* Align image and info section side by side */
+  flex: 1;
+}
+
+#modal-image {
+  max-width: 300px; /* Limit the width of the image */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+  margin-right: 20px; /* Space between image and info */
+}
+
+#modal-info {
+  flex: 1; /* Allow info section to grow */
+}
+
+#modal-price-label {
+  font-weight: bold; /* Bold the "Price" label */
+}
+
+#credit {
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+#payment-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Close Button Styles */
+.close-button {
+  color: #333;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #f44336; /* Red color on hover */
+  text-decoration: none;
+}
+.contact-details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-details div {
+  text-align: center;
+  max-width: 30%;
+}
+
+.contact-details h2 {
+  font-size: 20px;
+  color: #e6beae;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.contact-details a {
+  color: #2980b9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #16a085;
+}
+
+footer.row{
+  background-color: rgb(245, 159, 79);;
+}
