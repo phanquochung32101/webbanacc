@@ -13,6 +13,7 @@ include('db.php');
         <li><a href="manage_accounts.php">Quản lý tài khoản</a></li>
         <li><a href="manage_orders.php">Quản lý đơn đặt hàng</a></li>
         <li><a href="sales_history.php">Lịch sử bán</a></li>
+        <li><a href="manage_complaints.php">Đơn khiếu nại</a></li>
     </ul>
 </body>
 </html>
