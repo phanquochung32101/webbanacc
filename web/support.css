@@ -101,7 +101,6 @@
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
-    padding: 20px;
   }
   
   .form-container {
@@ -158,7 +157,6 @@
   .form-group input[type="submit"]:hover {
     background-color: #45a049;
   }
-
   .contact-details {
     display: flex;
     justify-content: space-around;
@@ -171,17 +169,18 @@
   
   .contact-details h2 {
     font-size: 20px;
-    color: #e6beae;
+    color: white;
     margin-bottom: 10px;
   }
   
   .contact-details p {
-    font-size: 15px;
-    color: #ddd;
+    font-size: 14px;
+    color: white;
+    text-shadow: 0 0 5px cornsilk;
   }
   
   .contact-details a {
-    color: #2980b9;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -191,5 +190,6 @@
   }
   
   footer.row{
-    background-color: rgb(245, 159, 79);;
+    background-color: rgb(245, 159, 79);
+    padding: 30px 0;
   }

@@ -33,16 +33,16 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
         <div class="nav">
           <ul>
             <a href="index.php">
-              <li>Home</li>
+              <li>Trang chủ</li>
             </a>
             <a href="about.php">
-              <li>About</li>
+              <li>Giới thiệu</li>
             </a>
             <a href="../menu/menu.php">
-              <li>Menu</li>
+              <li>Danh sách</li>
             </a>
             <a href="support.php">
-              <li>Support</li>
+              <li>Hỗ trợ</li>
             </a>
           </ul>
         </div>
@@ -60,7 +60,7 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
             </a>
             <ul id="auth-menu">
                 <?php if ($loggedIn): ?>
-                    <li id="user-info">Xin chào, <?= htmlspecialchars($username); ?></li>
+                    <li id="user-info"><a href="../login/lichsu.php">Xin chào, <?= htmlspecialchars($username); ?></a></li>
                     <li id="logout"><a href="../login/logout.php">Đăng xuất</a></li>
                 <?php else: ?>
                     <li id="login"><a href="../login/login.php">Đăng nhập</a></li>
@@ -77,6 +77,11 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
         <div class = "content_main1">
           <h1 style="font-size:50px;">Shop bán <span>tài khoản</span> game</h1>
           <p>Nơi đây tổng hợp những tài khoản game liên quân ngon và rẻ nhất</p>
+          <p>Đa dạng hóa: "Nơi đây tổng hợp những tài khoản game Liên Quân Mobile đa dạng nhất, từ tài khoản mới bắt đầu đến tài khoản cao cấp." </p>
+<p>Bảo mật: "Cam kết bảo mật thông tin khách hàng và hoàn tiền 100% nếu phát sinh vấn đề." </p>
+<p>Hỗ trợ: "Đội ngũ hỗ trợ 24/7 sẵn sàng giải đáp mọi thắc mắc của bạn."</p>
+<p>Khuyến mãi: "Sale off cực sốc lên đến 50% cho tất cả các tài khoản." </p>
+<p>Tặng kèm: "Mua tài khoản tặng ngay skin hiếm hoặc rương tướng." </p>
 
           <button class="red_btn">
             <a href="#moreAccount">Visit Now <i class="fa-solid fa-arrow-right-long"></i></a>
@@ -87,7 +92,7 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
         </div>
       </div>
 
-      <<div class="acc-items">
+      <div class="acc-items">
     <div class="item">
         <div>
             <img src="./img/item1.jpg" alt="acc item" />
@@ -111,6 +116,14 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
         <h3>Ata Tân Thuỷ Thủ</h3>
         <p>Gồm zuka bậc A, Laville bậc A,...</p>
         <button class="white_btn acctrungbay">See Menu</button>
+    </div>
+    <div class="item">
+        <div>
+            <img src="./img/item4.jpg" alt="acc item" />
+        </div>
+        <h3>Tulen chí tôn kiếm tiên</h3>
+        <p>Gồm Tulen bậc SSS và 60 tướng</p>
+        <button class="red_btn acctrungbay">See Menu</button>
     </div>
 </div>
 
@@ -258,11 +271,11 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
     <div class="contact-details">
         <div>
             <h2>Số Điện Thoại</h2>
-            <p>📞 Hotline: 02251120321   -   022511203313</p>
+            <p>📞 Hotline: 02251120321   -   02251120292</p>
         </div>
         <div>
             <h2>Email</h2>
-            <p>✉️ Email: <a href="mailto:2251120321@ut.edu.vn">2251120321@ut.edu.vn</a>     -     <a href="mailto:22511203313@ut.edu.vn">22511203313@ut.edu.vn</a></p>
+            <p>✉️ Email: <a href="mailto:2251120321@ut.edu.vn">2251120321@ut.edu.vn</a>     -     <a href="mailto:2251120292@ut.edu.vn">2251120292@ut.edu.vn</a></p>
         </div>
         <div>
             <h2>Địa Chỉ</h2>

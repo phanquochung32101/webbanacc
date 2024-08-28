@@ -182,14 +182,6 @@ ul li strong {
   color: #b2967d;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #b2967d;
-  color: white;
-  border-radius: 5px;
-  margin-top: 20px;
-}
 
 .contact-details {
   display: flex;
@@ -203,17 +195,18 @@ footer {
 
 .contact-details h2 {
   font-size: 20px;
-  color: #e6beae;
+  color: white;
   margin-bottom: 10px;
 }
 
 .contact-details p {
-  font-size: 15px;
-  color: #ddd;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 0 5px cornsilk;
 }
 
 .contact-details a {
-  color: #2980b9;
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -223,5 +216,6 @@ footer {
 }
 
 footer.row{
-  background-color: rgb(245, 159, 79);;
+  background-color: rgb(245, 159, 79);
+  padding: 30px 0;
 }

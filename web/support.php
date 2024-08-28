@@ -32,16 +32,16 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
         <div class="nav">
           <ul>
             <a href="index.php">
-              <li>Home</li>
+              <li>Trang chủ</li>
             </a>
             <a href="about.php">
-              <li>About</li>
+              <li>Giới thiệu</li>
             </a>
             <a href="../menu/menu.php">
-              <li>Menu</li>
+              <li>Danh sách</li>
             </a>
             <a href="support.php">
-              <li>Support</li>
+              <li>Hỗ trợ</li>
             </a>
           </ul>
         </div>
@@ -59,7 +59,7 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
             </a>
             <ul id="auth-menu">
                 <?php if ($loggedIn): ?>
-                    <li id="user-info">Xin chào, <?= htmlspecialchars($username); ?></li>
+                    <li id="user-info"><a href="../login/lichsu.php">Xin chào, <?= htmlspecialchars($username); ?></a></li>
                     <li id="logout"><a href="../login/logout.php">Đăng xuất</a></li>
                 <?php else: ?>
                     <li id="login"><a href="../login/login.php">Đăng nhập</a></li>
@@ -87,10 +87,6 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
             <input type="date" id="bill_date" name="bill_date" required>
         </div>
         <div class="form-group">
-            <label for="payment_time">Thời gian nhập tiền</label>
-            <input type="text" id="payment_time" name="payment_time" required>
-        </div>
-        <div class="form-group">
             <label for="missing_amount">Số tiền không vào tài khoản (nếu có)</label>
             <input type="text" id="missing_amount" name="missing_amount">
         </div>
@@ -111,11 +107,11 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
     <div class="contact-details">
         <div>
             <h2>Số Điện Thoại</h2>
-            <p>📞 Hotline: 02251120321   -   022511203313</p>
+            <p>📞 Hotline: 02251120321   -   02251120292</p>
         </div>
         <div>
             <h2>Email</h2>
-            <p>✉️ Email: <a href="mailto:2251120321@ut.edu.vn">2251120321@ut.edu.vn</a>     -     <a href="mailto:22511203313@ut.edu.vn">22511203313@ut.edu.vn</a></p>
+            <p>✉️ Email: <a href="mailto:2251120321@ut.edu.vn">2251120321@ut.edu.vn</a>     -     <a href="mailto:2251120292@ut.edu.vn">2251120292@ut.edu.vn</a></p>
         </div>
         <div>
             <h2>Địa Chỉ</h2>

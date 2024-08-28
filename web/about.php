@@ -33,16 +33,16 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
         <div class="nav">
           <ul>
             <a href="index.php">
-              <li>Home</li>
+              <li>Trang chủ</li>
             </a>
             <a href="about.php">
-              <li>About</li>
+              <li>Giới thiệu</li>
             </a>
             <a href="../menu/menu.php">
-              <li>Menu</li>
+              <li>Danh sách</li>
             </a>
             <a href="support.php">
-              <li>Support</li>
+              <li>Hỗ trợ</li>
             </a>
           </ul>
         </div>
@@ -60,7 +60,7 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
             </a>
             <ul id="auth-menu">
                 <?php if ($loggedIn): ?>
-                    <li id="user-info">Xin chào, <?= htmlspecialchars($username); ?></li>
+                    <li id="user-info"><a href="../login/lichsu.php">Xin chào, <?= htmlspecialchars($username); ?></a></li>
                     <li id="logout"><a href="../login/logout.php">Đăng xuất</a></li>
                 <?php else: ?>
                     <li id="login"><a href="../login/login.php">Đăng nhập</a></li>
@@ -98,7 +98,7 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
         </div>
 
         <div class="content-section left">
-            <img src="./img/item1.jpg" alt="ThƯng Shop Image 3">
+            <img style = "width:300px;height:300px;" src="./img/plate3.png" alt="ThƯng Shop Image 3">
             <div class="text-content">
                 <h2>Lựa chọn ThƯng Shop - Lựa chọn của sự tin cậy</h2>
                 <p>Chúng tôi không chỉ đơn thuần là một nơi bán tài khoản, mà còn là người bạn đồng hành đáng tin cậy trên hành trình chinh phục Liên Quân Mobile của bạn. Với sứ mệnh mang đến cho game thủ những trải nghiệm tốt nhất, ThƯng Shop cam kết cung cấp dịch vụ chất lượng, uy tín, và luôn đặt sự hài lòng của khách hàng lên hàng đầu.</p>
@@ -118,11 +118,11 @@ $username = $loggedIn ? $_SESSION['login_user'] : '';
     <div class="contact-details">
         <div>
             <h2>Số Điện Thoại</h2>
-            <p>📞 Hotline: 02251120321   -   022511203313</p>
+            <p>📞 Hotline: 02251120321   -   02251120292</p>
         </div>
         <div>
             <h2>Email</h2>
-            <p>✉️ Email: <a href="mailto:2251120321@ut.edu.vn">2251120321@ut.edu.vn</a>     -     <a href="mailto:22511203313@ut.edu.vn">22511203313@ut.edu.vn</a></p>
+            <p>✉️ Email: <a href="mailto:2251120321@ut.edu.vn">2251120321@ut.edu.vn</a>     -     <a href="mailto:2251120292@ut.edu.vn">2251120292@ut.edu.vn</a></p>
         </div>
         <div>
             <h2>Địa Chỉ</h2>

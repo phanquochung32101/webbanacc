@@ -106,8 +106,9 @@ document.getElementById('payment-button').addEventListener('click', function() {
         .then(response => response.text())
         .then(data => {
             alert(data);
-            // Refresh the page or update the UI as needed
-            window.location.reload();
+            if (data.includes('Thanh toán thành công')) {
+                window.location.reload(); // Refresh the page or update the UI as needed
+            }
         })
         .catch(error => {
             console.error('Error:', error);
@@ -115,3 +116,7 @@ document.getElementById('payment-button').addEventListener('click', function() {
         });
     }
 });
+
+
+//Reload
+

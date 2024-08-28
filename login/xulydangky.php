@@ -28,7 +28,7 @@ if ($pass != $repass)
     require_once '../connectdb.php';
     
     // Set the default user type, e.g., 'user'
-    $typeuser = 'user';
+    $typeuser = 'user'; 
 
     // Insert the new user into the database
     $sql = "INSERT INTO users(username, password, typeuser, email) VALUES ('$u', '$pass', '$typeuser', '$email')";

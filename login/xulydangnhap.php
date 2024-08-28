@@ -20,11 +20,7 @@ if ($numrows_user == 1) {
     $_SESSION['typeuser'] = $row_user['typeuser'];
 
     // Check if the user is an admin
-    if ($row_user['typeuser'] == 'admin') {
-        header("location: ../admin/dashboard.html");
-    } else {
-        header("location: ../web/index.php");
-    }
+    header("location: ../web/index.php");
     exit();
 } else {
     header("location: login.php?error=1");

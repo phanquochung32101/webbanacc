@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    padding-top: 70px;
+}
+
+#lop_a_menu_quanliacc {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(252, 176, 36);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#lop_a_menu_quanliacc:hover {
+    background-color: rgb(253, 57, 8);
+}
+
+#lop_a_quanliacc {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(252, 176, 36);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#lop_a_quanliacc:hover {
+    background-color: rgb(253, 57, 8);
+    /* Change background color on hover */
+}
+
+/* Header Styles */
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 7vw;
+    background-color: rgb(252, 176, 36);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo and Icons */
+.logo1 img {
+    width: 60px;
+    height: 45px;
+}
+
+.bar1 {
+    display: none;
+}
+
+/* Navigation Styles */
+.nav1 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav1 ul li {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 17px;
+
+}
+
+.nav1 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav1 ul li:hover a {
+    color: rgb(253, 57, 8);
+}
+
+/* Account Menu Styles */
+.account1 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account1 ul li {
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.account1 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.account1 ul li a:hover {
+    color: rgb(253, 57, 8);
+}
+
+/* Auth Menu Styles */
+#auth-menu1 {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+}
+
+#auth-menu1 li {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#auth-menu1 li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Auth Menu Toggle */
+#user-menu1 {
+    position: relative;
+}
+
+#user-menu1:hover #auth-menu1 {
+    display: flex;
+}
+
+#the_a_donhang {
+    color: red;
+    /* Thay đổi màu chữ */
+    text-decoration: none;
+    /* Loại bỏ gạch chân */
+    font-weight: bold;
+    /* Đặt chữ thành đậm */
+}
+
+#the_a_donhang:hover {
+    color: white;
+    /* Thay đổi màu chữ khi di chuột qua */
+}
+
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CSS cho phần tử chính */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS cho tiêu đề */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* CSS cho biểu mẫu */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* CSS cho nhãn */
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* CSS cho các trường nhập liệu */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* CSS cho các nút */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(252, 176, 36);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* CSS cho nút khi hover */
+button:hover {
+    background-color: rgb(253, 57, 8);
+}
+#auth-menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    /* Căn chỉnh menu sang bên phải */
+    padding: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* Sắp xếp các mục theo cột */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Đổ bóng nhẹ */
+    background-color: #ffffff;
+    /* Nền trắng */
+    border-radius: 8px;
+    /* Bo tròn góc */
+    gap: 10px;
+    /* Khoảng cách giữa các mục */
+}
+
+/* CSS cho các mục danh sách */
+#auth-menu li {
+    padding: 10px 20px;
+    /* Khoảng cách bên trong mục */
+    font-size: 16px;
+    /* Kích thước chữ */
+    background-color: #f9f9f9;
+    /* Màu nền mục */
+    border-radius: 4px;
+    /* Bo tròn góc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng nhẹ */
+    cursor: pointer;
+    /* Con trỏ chuột khi di chuột qua */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Hiệu ứng chuyển màu nền và đổ bóng */
+}
+
+/* CSS cho mục khi hover */
+#auth-menu li:hover {
+    background-color: #e0e0e0;
+    /* Thay đổi màu nền khi di chuột qua */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    /* Tăng cường đổ bóng khi di chuột qua */
+}
+
+/* CSS cho liên kết trong các mục */
+#auth-menu li a {
+    text-decoration: none;
+    /* Loại bỏ gạch chân */
+    color: #333;
+    /* Màu chữ liên kết */
+    display: block;
+    /* Làm cho liên kết chiếm toàn bộ diện tích của mục */
+}
+
+/* CSS cho các nút đăng nhập và đăng ký */
+#login,
+#register {
+    background-color: #007bff;
+    /* Màu nền nút */
+    color: #fff;
+    /* Màu chữ nút */
+    text-align: center;
+    /* Căn giữa chữ trong nút */
+    padding: 10px 20px;
+    /* Khoảng cách bên trong nút */
+    border-radius: 4px;
+    /* Bo tròn góc nút */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Đổ bóng nhẹ cho nút */
+    transition: background-color 0.3s ease;
+    /* Hiệu ứng chuyển màu nền nút */
+}
+
+/* CSS cho nút khi hover */
+#login:hover,
+#register:hover {
+    background-color: #0056b3;
+    /* Thay đổi màu nền khi di chuột qua */
+}
+
+/* CSS cho các mục ngang trong menu */
+#auth-menu .horizontal {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
